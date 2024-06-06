@@ -9,9 +9,10 @@
  * Perform parallelized matrix multiplication with MPI.
  * 
  * Usage:
- * 		$ mpirun -np 4 ./mpi_cannon_algorithm <matrix_file_A> <matrix_file_B> <output_file>
+ * 		$ mpirun -np <num_processes> ./mpi_cannon_algorithm <matrix_file_A> <matrix_file_B> <output_file>
  * 
  * The command line arguments are defined as follows:
+ * 		- <num_processes> The number of processes to initialize MPI with
  * 		- <matrix_file_A> A .txt file containing matrix A
  * 		- <matrix_file_B> A .txt file containing matrix B
  * 		- <output_file> A .txt file to write the result of A*B to
